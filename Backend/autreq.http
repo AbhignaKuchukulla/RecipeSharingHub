@@ -1,0 +1,76 @@
+POST http://localhost:4000/author-api/user
+Content-Type: application/json
+
+{
+    "userType": "author",
+    "username": "vikas",
+    "password": "vikas",
+    "email": "vikas@gmail.com"
+}
+
+POST http://localhost:4000/author-api/login
+Content-Type: application/json
+
+{
+    "userType": "author",
+    "username": "vikas",
+    "password": "vikas"
+}
+
+POST http://localhost:4000/author-api/recipe
+Content-Type: application/json
+
+{
+    "username": "vikas",
+    "title": "Delicious Pasta Carbonara Recipe",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    "published": "{{$datetime iso8601}}",
+    "updated": "{{$datetime iso8601}}"
+}
+
+POST http://localhost:4000/author-api/recipe
+Content-Type: application/json
+
+{
+    "recipeId": "{{$timestamp}}",
+    "title": "Classic Tiramisu Recipe",
+    "category": "Recipes",
+    "content": "Tiramisu is a classic Italian dessert...",
+    "dateOfCreation": "{{$datetime iso8601}}",
+    "dateOfModification": "{{$datetime iso8601}}",
+    "username": "vikas",
+    "comments": [],
+    "status": true
+}
+
+PUT http://localhost:4000/author-api/recipe
+Content-Type: application/json
+
+{
+    "recipeId": "1708955782",
+    "title": "Classic Tiramisu Recipe",
+    "category": "Recipes",
+    "content": "Tiramisu is a classic Italian dessert loved by many...",
+    "dateOfCreation": "2024-02-26T13:56:22.487Z",
+    "dateOfModification": "{{$datetime iso8601}}",
+    "username": "vikas",
+    "comments": [],
+    "status": true
+}
+
+PUT http://localhost:4000/author-api/recipe/1708955782
+Content-Type: application/json
+
+{
+    "recipeId": "1708955782",
+    "title": "Classic Tiramisu Recipe",
+    "category": "Recipes",
+    "content": "Tiramisu is a classic Italian dessert loved by many...",
+    "dateOfCreation": "2024-02-26T13:56:22.487Z",
+    "dateOfModification": "{{$datetime iso8601}}",
+    "username": "vikas",
+    "comments": [],
+    "status": true
+}
+
+GET http://localhost:4000/author-api/recipes/vikas

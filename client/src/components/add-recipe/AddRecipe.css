@@ -1,0 +1,57 @@
+/* AddRecipe.css */
+
+/* Container styles */
+.container {
+  margin-top: 2rem;
+}
+
+/* Card styles */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  background-color: #f8f9fa;
+}
+
+.card-body {
+  background-color: #f8f9fa;
+}
+
+/* Form label styles */
+.form-label {
+  font-weight: bold;
+}
+
+/* Form control styles */
+.form-control {
+  border-radius: 0.25rem;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* List group styles */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Error message styles */
+.text-danger {
+  font-size: 1.25rem;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  /* Adjust styles for smaller screens */
+}

@@ -1,0 +1,29 @@
+.author-profile {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--dark-green) !important;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

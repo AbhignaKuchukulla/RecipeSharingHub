@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card Image Styles */
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card Hover Effect */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Title Styles */
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem; /* Increased font size for recipe names */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Button Styles */
+.custom-btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: #28a745;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Like Button Styles */
+.like-buttons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.like-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #EC4678;
+  transition: color 0.2s ease;
+}
+
+.like-icon:hover {
+  color: #d81b60;
+  animation-name: pulse;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Loader and Error Styles */
+.loader {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 2rem;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+/* Card Footer Styles */
+.card-footer {
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.text-body-secondary {
+  color: #6c757d;
+}
+
+/* Additional Styling */
+.lead {
+  font-size: 0.5rem; /* Decreased font size for time, serves, and calorie info */
+  margin: 0.5em 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.25em; /* Space between icon and text */
+}
+
+.recipe-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* Adjusted gap for better alignment */
+}
+
+.recipe-footer {
+  margin-top: 1em;
+}
+
+.recipe-footer .btn {
+  margin-right: 0.5em;
+}

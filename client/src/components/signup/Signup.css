@@ -1,0 +1,12 @@
+h2{
+  color:#e91c1c;
+}
+
+button[type=submit]{
+  background-color: var(--dark-green);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  display: block;
+  float: right;
+}

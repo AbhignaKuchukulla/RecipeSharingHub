@@ -1,0 +1,37 @@
+###user creation
+post http://localhost:4000/user-api/user
+Content-Type: application/json
+
+{
+    "userType":"user",
+    "username":"SHOWMITH",
+    "password":"Abhi@6759",
+    "email":"wastefellow@gmail.com"
+}
+
+
+#### user login
+post http://localhost:4000/user-api/login
+Content-Type: application/json
+
+{
+    "userType":"user",
+    "username":"SHOWMITH",
+    "password":"Abhi@6759"
+   
+}
+
+###reading recipes of all users
+get http://localhost:4000/user-api/recipes
+
+
+### write comment
+post http://localhost:4000/user-api/comment/1708955782
+Content-Type: application/json
+
+{
+   
+    "username":"kiran",
+    "comment":"Amazing content"
+   
+}
